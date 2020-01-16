@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-//init dependencies for File Search and chalk
+//init dependencies for File System and chalk
 const fs = require('fs');
 const chalk = require('chalk');
 const {lstat} = fs.promises;
