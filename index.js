@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 
+//init dependencies for File Search and chalk
 const fs = require('fs');
 const chalk = require('chalk');
-
 const {lstat} = fs.promises;
+//reading directory files
 fs.readdir(process.cwd(), async (err, filenames) =>{
     if (err){
         console.log(err);
